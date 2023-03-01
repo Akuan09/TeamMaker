@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Team builder</title>
+</head>
+<body id="body">
+    <div class="container-fluid" id="container">
+        <div class="row">
+            <div class="col-2 m-5 border border-5 border-secondary rounded-5 bg-dark overflow-auto" style="height:80vh;min-width: 200px;">
+                <div class="row justify-content-center">
+                    <h3 class="text-center text-light mt-2 mb-0">Participants</h3>
+                    <h5 class="text-center text-light m-0" id="add">+</h5>
+                </div>
+                <div class="row mt-2" id="print-p">
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="row" id="top">
+                    <div class="col mt-5">
+                        <label for="nbTeam" class="text-light">Nombre de teams :</label>
+                        <select name="nbTeam" id="nbTeam">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="col-2 mt-5 text-light" id="trash">
+                        <div class="row border border-1 border-secondary bg-primary">
+                            <h6>Temporaire</h6>
+                        </div>
+                        <div class="row border border-1 border-secondary mt-1 text-light overflow-auto bg-dark" id="tmp" style="maxHeight:125px">
+                            <p>Joueur 1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mt-2">
+                        <button id="create">Générer</button>
+                    </div>
+                </div>
+                <div class="row mt-5 text-light" id="spotTeam">
+                    <div class="col-2 me-3 mb-4 team">
+                        <div class="row border border-1 border-secondary bg-primary">
+                            <h6>Team 1</h6>
+                        </div>
+                        <div class="row border border-1 border-secondary mt-1 overflow-auto bg-dark" style="max-height:125px">
+                            <p class="mb-0">Participant 1</p>
+                            <p class="mb-0">Participant 2</p>
+                            <p class="mb-0">Participant 3</p>
+                            <p class="mb-0">Participant 4</p>
+                            <p class="mb-0">Participant 5</p>
+                            <p class="mb-0">Participant 6</p>
+                        </div>
+                    </div>
+                    <div class="col-2 me-3 mb-4 team">
+                        <div class="row border border-1 border-secondary bg-primary">
+                            <h6>Team 2</h6>
+                        </div>
+                        <div class="row border border-1 border-secondary mt-1 overflow-auto bg-dark" style="max-height:125px">
+                            <p class="mb-0">Participant 1</p>
+                            <p class="mb-0">Participant 2</p>
+                            <p class="mb-0">Participant 3</p>
+                            <p class="mb-0">Participant 4</p>
+                            <p class="mb-0">Participant 5</p>
+                            <p class="mb-0">Participant 6</p>
+                        </div>
+                    </div>
+                    <div class="col-2 me-3 mb-4 team">
+                        <div class="row border border-1 border-secondary bg-primary">
+                            <h6>Team 3</h6>
+                        </div>
+                        <div class="row border border-1 border-secondary mt-1 overflow-auto bg-dark" style="max-height:125px">
+                            <p class="mb-0">Participant 1</p>
+                            <p class="mb-0">Participant 2</p>
+                            <p class="mb-0">Participant 3</p>
+                            <p class="mb-0">Participant 4</p>
+                            <p class="mb-0">Participant 5</p>
+                        </div>
+                    </div>
+                    <div class="col-2 me-3 mb-4 team">
+                        <div class="row border border-1 border-secondary bg-primary">
+                            <h6>Team 4</h6>
+                        </div>
+                        <div class="row border border-1 border-secondary mt-1 overflow-auto bg-dark" style="max-height:125px">
+                            <p class="mb-0">Participant 1</p>
+                            <p class="mb-0">Participant 2</p>
+                            <p class="mb-0">Participant 3</p>
+                            <p class="mb-0">Participant 4</p>
+                            <p class="mb-0">Participant 5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/members.js"></script>
+    <script src="js/players.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
